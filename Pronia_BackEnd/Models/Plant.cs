@@ -14,11 +14,11 @@ namespace Pronia_BackEnd.Models
         public string Shipping { get; set; }
         public string  Reguest { get; set; }
         public string  Guarantee { get; set; }
-        public int ColorId { get; set; }
+        public int? ColorId { get; set; }
         public Color Color { get; set; }
-        public int SizeId { get; set; }
+        public int? SizeId { get; set; }
         public Size Size { get; set; }
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; }
         public Category Category { get; set; }
         public List<PlantImage> PlantImages { get; set; }
 

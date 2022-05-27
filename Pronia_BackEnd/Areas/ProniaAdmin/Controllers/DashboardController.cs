@@ -2,10 +2,10 @@
 
 namespace Pronia_BackEnd.Areas.ProniaAdmin.Controllers
 {
-    [Area("ProniaAmdin")]
+    [Area("ProniaAdmin")]
     public class DashboardController : Controller
     { 
-        public IActionResult Index()
+        public ActionResult Index()
         {
             return View();
         }

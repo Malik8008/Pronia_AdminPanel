@@ -10,5 +10,7 @@ namespace Pronia_BackEnd.ViewModel.HomeVM
 
         public List<Plant> Plants { get; set; }
 
+        
+
     }
 }

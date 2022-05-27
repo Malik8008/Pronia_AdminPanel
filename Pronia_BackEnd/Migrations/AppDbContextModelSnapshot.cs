@@ -82,10 +82,10 @@ namespace Pronia_BackEnd.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int?>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ColorId")
+                    b.Property<int?>("ColorId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -109,7 +109,7 @@ namespace Pronia_BackEnd.Migrations
                     b.Property<string>("Shipping")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SizeId")
+                    b.Property<int?>("SizeId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -199,21 +199,15 @@ namespace Pronia_BackEnd.Migrations
                 {
                     b.HasOne("Pronia_BackEnd.Models.Category", "Category")
                         .WithMany("Plants")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CategoryId");
 
                     b.HasOne("Pronia_BackEnd.Models.Color", "Color")
                         .WithMany()
-                        .HasForeignKey("ColorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ColorId");
 
                     b.HasOne("Pronia_BackEnd.Models.Size", "Size")
                         .WithMany("Plants")
-                        .HasForeignKey("SizeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SizeId");
                 });
 
             modelBuilder.Entity("Pronia_BackEnd.Models.PlantImage", b =>

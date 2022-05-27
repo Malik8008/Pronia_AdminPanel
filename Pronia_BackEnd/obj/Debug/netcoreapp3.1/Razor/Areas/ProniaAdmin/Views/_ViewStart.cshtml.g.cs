@@ -12,7 +12,15 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\Areas\ProniaAdmin\Views\_ViewImports.cshtml"
+using Pronia_BackEnd.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Areas/ProniaAdmin/Views/_ViewStart.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"764748dea96e8f946c98777b323ba0a17c1be75e", @"/Areas/ProniaAdmin/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_ProniaAdmin_Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
