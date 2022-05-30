@@ -23,7 +23,7 @@ namespace Pronia_BackEnd.Controllers
         {
             HomeVM model = new HomeVM
             {
-                Sliders = await _context.Sliders.ToListAsync(),
+                Sliders = await _context.Sliders.OrderBy(s=>s.Discount).Take(3).ToListAsync(),
                 Clients = await _context.Clients.ToListAsync(),
                 Plants = await _context.Plants.Include(p=>p.PlantImages).ToListAsync(),
             };

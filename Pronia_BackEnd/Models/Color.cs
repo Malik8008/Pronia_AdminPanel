@@ -6,6 +6,6 @@ namespace Pronia_BackEnd.Models
     {
         public int Id { get; set; }
         public string  Name { get; set; }
-        public List<Color> Colors { get; set; }
+        public List<Plant> Plants { get; set; }
     }
 }
