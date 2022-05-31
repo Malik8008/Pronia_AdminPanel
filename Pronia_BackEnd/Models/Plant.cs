@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Pronia_BackEnd.Models
@@ -6,13 +8,19 @@ namespace Pronia_BackEnd.Models
     public class Plant
     {
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
         [Column(TypeName="decimal(6,2)")]
         public decimal Price { get; set; }
+        [Required]
         public string Description { get; set; }
+        [Required]
         public string SKUCode { get; set; }
+        [Required]
         public string Shipping { get; set; }
+        [Required]
         public string  Reguest { get; set; }
+        [Required]
         public string  Guarantee { get; set; }
         public int? ColorId { get; set; }
         public Color Color { get; set; }
@@ -21,6 +29,10 @@ namespace Pronia_BackEnd.Models
         public int? CategoryId { get; set; }
         public Category Category { get; set; }
         public List<PlantImage> PlantImages { get; set; }
+        [NotMapped]
+        public IFormFile MainImage { get; set; }
+        [NotMapped]
+        public List<IFormFile> AnotherImage { get; set; }
 
     }
 }

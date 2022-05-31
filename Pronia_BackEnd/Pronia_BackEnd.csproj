@@ -10,6 +10,145 @@
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\about\icon\1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\about\icon\2.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\about\team\1-1-270x270.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\about\team\1-2-270x270.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\about\team\1-3-270x270.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\about\team\1-4-270x270.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\banner\1-1-770x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\banner\1-2-370x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\banner\1-3-370x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\banner\1-4-770x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\banner\2-1-570x500.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\banner\2-2-570x235.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\banner\2-3-570x235.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\banner\3-1-1208x542.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\banner\4-1-1170x400.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\avatar\1-1-120x120.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\avatar\1-2-120x120.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\avatar\1-3-120x120.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\blockquote\quotation.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\large-size\1-1-768x546.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\medium-size\1-1-310x220.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\medium-size\1-2-310x220.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\medium-size\1-3-310x220.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\medium-size\2-1-370x270.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\medium-size\2-2-370x270.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\small-size\1-1-70x70.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\small-size\1-2-70x70.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\blog\small-size\1-3-70x70.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\brand\1-1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\brand\1-2.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\brand\1-3.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\brand\1-4.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\brand\1-5.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\brand\bg\1-1170x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\breadcrumb\bg\1-1-1919x388.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\contact\1-1-370x500.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\error-404\404.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\error-404\bg\1-1920x886.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\footer\bg\1-1920x465.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\logo\dark.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\newsletter\1-1920x400.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\offcanvas\close-white.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\payment\1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\large-size\1-1-570x633.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\large-size\1-2-570x633.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\large-size\1-3-570x633.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\large-size\1-4-570x633.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\medium-size\1-1-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\medium-size\1-10-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\medium-size\1-11-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\medium-size\1-2-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\medium-size\1-3-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\medium-size\1-4-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\medium-size\1-5-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\medium-size\1-6-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\medium-size\1-7-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\medium-size\1-8-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\medium-size\1-9-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\small-size\1-1-112x124.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\small-size\1-2-112x124.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\small-size\1-3-112x124.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\small-size\2-1-70x78.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\small-size\2-2-70x78.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\product\small-size\2-3-70x78.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\shape\1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\shape\2.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\shipping\icon\car.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\shipping\icon\card.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\shipping\icon\earphones.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\shipping\icon\home.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\shipping\icon\message.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\shipping\icon\phone.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\shipping\icon\plane.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\shipping\icon\service.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\shipping\icon\shield.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\sidebar\banner\1-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\slider\bg\1-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\slider\bg\2-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\slider\inner-img\1-1-524x617.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\slider\inner-img\1-2-524x617.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\slider\slide-img\2-1-960x741.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\slider\slide-img\2-2-960x741.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\slider\slide-img\2-3-960x741.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\testimonial\bg\1-1-1820x443.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\testimonial\icon\quotation.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\testimonial\user\1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\testimonial\user\2.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\testimonial\user\3.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1--1rnu4p.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-1-1820x443.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-1-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-1-310x220.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-1-524x617.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-1-570x633.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-1-770x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-10-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-11-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-1170x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-1920x465.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-2-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-2-310x220.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-2-370x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-2-524x617.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-2-570x633.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-2.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-270x300.webp" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-3-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-3-310x220.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-3-370x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-3-570x633.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-3.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-4-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-4-570x633.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-4-770x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-4.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-5-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-5.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-6-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-7-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-8-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1-9-270x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\2-1-70x78.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\2-2-70x78.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\2-3-70x78.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\2.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\3.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\Botanica.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\car.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\card.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\ce560ea2-19fc-4485-ac3c-4db07b98043cCorner.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\dark.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\quotation.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\admin\images\website-images\service.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.25">
@@ -22,6 +161,161 @@
   <ItemGroup>
     <Folder Include="Areas\ProniaAdmin\Data\" />
     <Folder Include="Areas\ProniaAdmin\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\admin\css\animate.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\css\bootstrap.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\css\font-awesome.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\css\ion.rangeSlider.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\css\magnific-popup.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\css\nice-select.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\css\Pe-icon-7-stroke.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\css\plugins.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\css\style.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\css\style.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\css\swiper-bundle.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\fonts\fontawesome-webfont.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\fonts\fontawesome-webfont.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\fonts\fontawesome-webfont.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\fonts\fontawesome-webfont.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\fonts\fontawesome-webfont.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\fonts\FontAwesome.otf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\fonts\Pe-icon-7-stroke.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\fonts\Pe-icon-7-stroke.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\fonts\Pe-icon-7-stroke.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\fonts\Pe-icon-7-stroke.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\images\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\main.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\plugins.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\plugins\ion.rangeSlider.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\plugins\jquery.counterup.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\plugins\jquery.magnific-popup.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\plugins\jquery.nice-select.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\plugins\mailchimp-ajax.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\plugins\parallax.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\plugins\swiper-bundle.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\plugins\tippy.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\plugins\wow.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\vendor\bootstrap.bundle.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\vendor\jquery-3.6.0.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\vendor\jquery-migrate-3.3.2.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\vendor\jquery.waypoints.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\admin\js\vendor\modernizr-3.11.2.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

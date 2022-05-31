@@ -59,9 +59,9 @@ namespace Pronia_BackEnd.Areas.ProniaAdmin.Controllers
                     return View();
                 }
 
-                //string Filename =slider.Photo.FileName;
-                //string path = Path.Combine(_env.WebRootPath,"assets","images","website-images");
-                //string fullPath = Path.Combine(path,Filename);
+                //string Filename = slider.Photo.FileName;
+                //string path = Path.Combine(_env.WebRootPath, "assets", "images", "website-images");
+                //string fullPath = Path.Combine(path, Filename);
 
                 //using (FileStream stream = new FileStream(fullPath, FileMode.Create))
                 //{
@@ -128,7 +128,11 @@ namespace Pronia_BackEnd.Areas.ProniaAdmin.Controllers
             if (existedSlider == null) return NotFound();
             if (id != slider.Id) return BadRequest();
 
-            _context.Entry(existedSlider).CurrentValues.SetValues(slider);
+            existedSlider.Title = slider.Title;
+            existedSlider.Subtitle = slider.Subtitle;
+            existedSlider.Discount = slider.Discount;
+            existedSlider.Order = slider.Order;
+            existedSlider.Image = slider.Image;
 
             await _context.SaveChangesAsync();
 
