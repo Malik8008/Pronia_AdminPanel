@@ -33,6 +33,8 @@ namespace Pronia_BackEnd.Models
         public IFormFile MainImage { get; set; }
         [NotMapped]
         public List<IFormFile> AnotherImage { get; set; }
+        [NotMapped]
+        public List<int> ImageIds { get; set; }
 
     }
 }

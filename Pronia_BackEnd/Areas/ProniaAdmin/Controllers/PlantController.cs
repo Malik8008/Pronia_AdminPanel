@@ -3,8 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pronia_BackEnd.DAL;
 using Pronia_BackEnd.Extensions;
+using Pronia_BackEnd.Models;
 using Pronia_BackEnd.Utilities;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Pronia_BackEnd.Areas.ProniaAdmin.Controllers
@@ -61,22 +63,22 @@ namespace Pronia_BackEnd.Areas.ProniaAdmin.Controllers
                 }
             }
 
-            plant.PlantImages = new List<Models.PlantImage>();
+            plant.PlantImages = new List<PlantImage>();
 
-            Models.PlantImage mainImage = new Models.PlantImage
+            PlantImage mainImage = new PlantImage
             {
-                ImagePath = await plant.MainImage.FileCreate(_env.WebRootPath, @"assets/images/website-images"),
+                ImagePath = await plant.MainImage.FileCreate(_env.WebRootPath, @"assets\images\website-images"),
                 IsMain=true,
                 Plant=plant
             };
 
             plant.PlantImages.Add(mainImage);   
 
-            foreach (var image in plant.AnotherImage)
+            foreach (var anot in plant.AnotherImage)
             {
-                Models.PlantImage anotherImage = new Models.PlantImage
+                PlantImage anotherImage = new PlantImage
                 {
-                    ImagePath = await image.FileCreate(_env.WebRootPath, @"assets/images/website-images"),
+                    ImagePath = await anot.FileCreate(_env.WebRootPath, @"assets\images\website-images"),
                     IsMain = false,
                     Plant = plant
                 };
@@ -105,14 +107,43 @@ namespace Pronia_BackEnd.Areas.ProniaAdmin.Controllers
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public async Task<ActionResult> Edit(Models.Plant plant ,int id)
+        public async Task<ActionResult> Edit(Plant plant ,int id)
         {
             ViewBag.Colors = await _context.Colors.ToListAsync();
             ViewBag.Sizes = await _context.Sizes.ToListAsync();
             ViewBag.Categories = await _context.Categories.ToListAsync();
 
-            Models.Plant existed = await _context.Plants.FirstOrDefaultAsync(p => p.Id == id);
-            if (existed == null) return View();
+            Plant existed = await _context.Plants.FirstOrDefaultAsync(p => p.Id == id);
+            if (existed == null) return NotFound();
+            if (plant.ImageIds==null && plant.AnotherImage==null)
+            {
+                ModelState.AddModelError("", "You cannot delete all images in anotherImage");
+                return View(existed);
+            }
+
+            List<PlantImage> removableImages = existed.PlantImages.Where(i => i.IsMain == false && !plant.ImageIds.Contains(i.Id)).ToList();
+            existed.PlantImages.RemoveAll(p => removableImages.Any(rp => rp.Id == p.Id));
+
+            foreach (var image in removableImages)
+            {
+                FileUtility.FileDelete(_env.WebRootPath, @"assets\images\website-images", image.ImagePath);
+            }
+
+            foreach (var anot in plant.AnotherImage)
+            {
+                PlantImage plantImage = new PlantImage
+                {
+                    ImagePath = await anot.FileCreate(_env.WebRootPath, @"assets\images\website-images"),     
+                    IsMain=false,
+                    PlantId=existed.Id
+                };
+
+                existed.PlantImages.Add(plantImage);
+            }
+
+            _context.Entry(existed).CurrentValues.SetValues(plant);
+            await _context.SaveChangesAsync();  
+
 
             return RedirectToAction(nameof(Index));
         }

@@ -71,7 +71,8 @@
             <div class="col-lg-2" style="position:relative">
                 <span class="mb-3">Plant main Image:</span><br />
                 <i class="mdi mdi-close-octagon closeBtn" style="position:absolute;top:20px;right:5px;color:red;font-size:20px"></i>
-                <img style="width: 100%; height= 90px" src="~/assets/images/website-images/@Model.PlantImages.FirstOrDefault(p=>p.IsMain==true).ImagePath" />
+                <img style="width: 100%; height= 90px" src="~/assets/images/website-images/@Model.PlantImages.FirstOrDefault(p=>p.IsMain==true)?.ImagePath" />
+                <input type="hidden" value="@Model.PlantImages.FirstOrDefault(p=>p.IsMain==true)?.Id"  name="ImageIds"/>
             </div>
         </div>
     </div>
@@ -83,6 +84,7 @@
                 <div class="col-lg-2" style="position:relative">
                     <i class="mdi mdi-close-octagon closeBtn" style="position:absolute;top:5px;right:5px;color:red;font-size:20px"></i>
                     <img style="width: 100%; height= 90px" src="~/assets/images/website-images/@another.ImagePath" />
+                    <input type="hidden" value="@another.Id"  name="ImageIds"/>
                 </div>
             }
         </div>
