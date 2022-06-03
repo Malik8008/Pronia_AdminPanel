@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Pronia_BackEnd.DAL;
 
 namespace Pronia_BackEnd.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220601234925_createPlantAndCategoryforever")]
+    partial class createPlantAndCategoryforever
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -138,7 +140,7 @@ namespace Pronia_BackEnd.Migrations
 
                     b.HasIndex("PlantId");
 
-                    b.ToTable("PlantCategories");
+                    b.ToTable("PlantCategory");
                 });
 
             modelBuilder.Entity("Pronia_BackEnd.Models.PlantImage", b =>

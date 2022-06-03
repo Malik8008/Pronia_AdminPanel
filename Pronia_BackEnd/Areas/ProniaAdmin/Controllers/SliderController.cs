@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pronia_BackEnd.DAL;
 using Pronia_BackEnd.Extensions;
+using Pronia_BackEnd.Models;
 using Pronia_BackEnd.Utilities;
 using System.Collections.Generic;
 using System.IO;
@@ -93,7 +94,7 @@ namespace Pronia_BackEnd.Areas.ProniaAdmin.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
-            Models.Slider slider = await _context.Sliders.FirstOrDefaultAsync(s => s.Id == id);
+            Slider slider = await _context.Sliders.FirstOrDefaultAsync(s => s.Id == id);
             if (slider == null) return NotFound();
             return View(slider);
         }
@@ -114,17 +115,17 @@ namespace Pronia_BackEnd.Areas.ProniaAdmin.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
-            Models.Slider slider = await _context.Sliders.FirstOrDefaultAsync(s => s.Id == id);
+            Slider slider = await _context.Sliders.FirstOrDefaultAsync(s => s.Id == id);
             if (slider == null) return NotFound();
             return View(slider);
         }
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public async Task<IActionResult> Edit(int id, Models.Slider slider)
+        public async Task<IActionResult> Edit(int id, Slider slider)
         {
 
-            Models.Slider existedSlider = await _context.Sliders.FirstOrDefaultAsync(s => s.Id == id);
+            Slider existedSlider = await _context.Sliders.FirstOrDefaultAsync(s => s.Id == id);
             if (existedSlider == null) return NotFound();
             if (id != slider.Id) return BadRequest();
 

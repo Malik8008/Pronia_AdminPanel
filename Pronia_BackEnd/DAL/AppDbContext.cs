@@ -17,6 +17,7 @@ namespace Pronia_BackEnd.DAL
         public DbSet<Color> Colors { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<PlantImage> PlantImages { get; set; }
+        public DbSet<PlantCategory> PlantCategories { get; set; }
 
     }
 }

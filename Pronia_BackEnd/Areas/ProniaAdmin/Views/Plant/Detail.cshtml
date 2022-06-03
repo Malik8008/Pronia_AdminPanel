@@ -1,0 +1,80 @@
+﻿@model Plant
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div>
+    <div>
+        <h4>
+            Id
+        </h4>
+        <p>
+            @Model.Id
+        </p>
+    </div>
+    <div>
+        <h4>
+            Name
+        </h4>
+        <p>
+            @Model.Name
+        </p>
+    </div>
+    <div>
+        <h4>
+            Price
+        </h4>
+        <p>
+            @Model.Price
+        </p>
+    </div>
+    <div>
+        <h4>
+            Description
+        </h4>
+        <p>
+            @Model.Description
+        </p>
+    </div>
+    <div>
+        <h4>
+            SkuCode
+        </h4>
+        <p>
+            @Model.SKUCode
+        </p>
+    </div>
+     <div>
+        <h4>
+            Shipping
+        </h4>
+        <p>
+            @Model.Shipping
+        </p>
+    </div>
+     <div>
+        <h4>
+            MainImage
+        </h4>
+        <p>
+         <img style="width: 150px; height:90px"  src="~/assets/images/website-images/@Model.PlantImages.FirstOrDefault(p=>p.IsMain == true).ImagePath">
+        </p>
+    </div>
+     <div>
+        <h4>
+            AnotherImages
+        </h4>
+        <p>
+            <div class="d-flex">
+            @foreach (var item in Model.PlantImages.Where(a=>a.IsMain==false))
+           {
+               <div class="col-lg-2">
+                   <img style="width: 150px; height:90px" src="~/assets/images/website-images/@item.ImagePath">
+               </div>
+           }
+           </div>
+        </p>
+    </div>
+</div>
+

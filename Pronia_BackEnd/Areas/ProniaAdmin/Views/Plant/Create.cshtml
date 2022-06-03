@@ -38,8 +38,8 @@
     </div>
      <div>
         <label class="mb-3">Plant Category:</label><br />
-        <select class="form-control" asp-for="CategoryId" asp-items="@(new SelectList(ViewBag.Categories,"Id","Name"))"></select>
-        <span class="text-danger" asp-validation-for="CategoryId"></span>
+        <select class="form-control" asp-for="CategoryIds" asp-items="@(new SelectList(ViewBag.Categories,"Id","Name"))"></select>
+        <span class="text-danger" asp-validation-for="CategoryIds"></span>
     </div>
     <div>
         <label class="mb-3">Plant Shipping:</label><br />

@@ -26,8 +26,7 @@ namespace Pronia_BackEnd.Models
         public Color Color { get; set; }
         public int? SizeId { get; set; }
         public Size Size { get; set; }
-        public int? CategoryId { get; set; }
-        public Category Category { get; set; }
+        public List<PlantCategory> PlantCategories { get; set; }    
         public List<PlantImage> PlantImages { get; set; }
         [NotMapped]
         public IFormFile MainImage { get; set; }
@@ -35,6 +34,10 @@ namespace Pronia_BackEnd.Models
         public List<IFormFile> AnotherImage { get; set; }
         [NotMapped]
         public List<int> ImageIds { get; set; }
+        [NotMapped]
+        public int? MainImageId { get; set; }
+        [NotMapped]
+        public List<int?> CategoryIds { get; set; }
 
     }
 }

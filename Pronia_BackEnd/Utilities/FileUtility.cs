@@ -21,9 +21,9 @@ namespace Pronia_BackEnd.Utilities
             return Filename;
         }
 
-        public static async void FileDelete(string image,string path,string imageName)
+        public static async void FileDelete(string root,string path,string imageName)
         {
-            string fullPath = Path.Combine(path, imageName);
+            string fullPath = Path.Combine(root, path, imageName);
             if (File.Exists(fullPath))
             {
                 File.Delete(fullPath);  
