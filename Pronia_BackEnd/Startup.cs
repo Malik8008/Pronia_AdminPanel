@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Pronia_BackEnd.DAL;
+using Pronia_BackEnd.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,11 +26,15 @@ namespace Pronia_BackEnd
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<LayoutService>();
+
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(opt =>
             {
                 opt.UseSqlServer(_configuration.GetConnectionString("Default"));
             });
+
+            services.AddHttpContextAccessor();  
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,7 +62,7 @@ namespace Pronia_BackEnd
 
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=home}/{action=index}"
+                    pattern: "{controller=home}/{action=index}/{id?}"
                     );
             });
         }
