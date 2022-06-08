@@ -25,7 +25,7 @@ namespace Pronia_BackEnd.Controllers
             {
                 Sliders = await _context.Sliders.OrderBy(s=>s.Discount).Take(3).ToListAsync(),
                 Clients = await _context.Clients.ToListAsync(),
-                Plants = await _context.Plants.Include(p=>p.PlantImages).ToListAsync(),
+                Plants = await _context.Plants.Include(p=>p.PlantImages).Take(8).ToListAsync(),
                 Settings = await _context.Settings.ToListAsync(),
             };
             return View(model);  
