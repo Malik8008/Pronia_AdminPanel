@@ -138,7 +138,10 @@
                                                     <a class="dropdown-item" href="my-account.html">My account</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="login-register.html">Login | Register</a>
+                                                    <a class="dropdown-item" asp-controller="Account" asp-action="login">Login</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" asp-controller="Account" asp-action="register">Register</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -448,8 +451,11 @@
                                                 <li>
                                                     <a class="dropdown-item" href="my-account.html">My account</a>
                                                 </li>
+                                                 <li>
+                                                    <a class="dropdown-item" asp-controller="Account" asp-action="login">Login</a>
+                                                </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="login-register.html">Login | Register</a>
+                                                    <a class="dropdown-item" asp-controller="Account" asp-action="register">Register</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -827,7 +833,7 @@
                           {
                               <ul class="minicart-list">
                             <li class="minicart-product">
-                                <a class="product-item_remove" href="#">
+                                <a class="product-item_remove" asp-controller="Plant" asp-action="deletebasket" asp-route-id="@item.Plant.Id">
                                     <i class="pe-7s-close"
                                        data-tippy="Remove"
                                        data-tippy-inertia="true"

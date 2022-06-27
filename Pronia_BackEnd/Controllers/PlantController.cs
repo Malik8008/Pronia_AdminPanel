@@ -28,6 +28,34 @@ namespace Pronia_BackEnd.Controllers
             return View(plants);
         }
 
+        public async Task<IActionResult> DeleteBasket(int id)
+        {
+            string basketStr = HttpContext.Request.Cookies["Basket"];
+
+            List<BasketCookieItemVM> basket;
+
+            if (!string.IsNullOrEmpty(basketStr))
+            {
+
+                basket = JsonConvert.DeserializeObject<List<BasketCookieItemVM>>(basketStr);
+                BasketCookieItemVM existedcookie = basket.FirstOrDefault(i => i.Id == id);
+
+                if (existedcookie != null)
+                {
+
+
+                    basket.Remove(existedcookie);
+                    basketStr = JsonConvert.SerializeObject(basket);
+
+                }
+
+
+            }
+
+            HttpContext.Response.Cookies.Append("Basket", basketStr);
+            return RedirectToAction("Index", "Home");
+        }
+
         public async Task<IActionResult> AddBasket(int id)
         {
             Plant plant = await _context.Plants.FirstOrDefaultAsync(p=>p.Id==id);

@@ -174,3 +174,10 @@ C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\obj\Debug\netcorea
 C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\obj\Debug\netcoreapp3.1\Razor\Areas\ProniaAdmin\Views\Plant\Delete.cshtml.g.cs
 C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
 C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\obj\Debug\netcoreapp3.1\Razor\Views\Plant\Index.cshtml.g.cs
+C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Admin\OneDrive\Desktop\Pronia_BackEnd\Pronia_BackEnd\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

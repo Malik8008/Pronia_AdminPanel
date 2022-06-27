@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Pronia_BackEnd.DAL;
+using Pronia_BackEnd.Models;
 using Pronia_BackEnd.Services;
 using System;
 using System.Collections.Generic;
@@ -27,12 +29,29 @@ namespace Pronia_BackEnd
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<LayoutService>();
+            
 
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(opt =>
             {
                 opt.UseSqlServer(_configuration.GetConnectionString("Default"));
             });
+
+            services.AddIdentity<AppUser, IdentityRole>(option =>
+            {
+                option.Password.RequireDigit = true;
+                option.Password.RequireLowercase = true;
+                option.Password.RequiredLength = 8;
+                option.Password.RequireNonAlphanumeric= false;
+                option.Password.RequireUppercase= false;
+
+                option.Lockout.MaxFailedAccessAttempts = 3;
+                option.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);    
+                option.Lockout.AllowedForNewUsers = true;
+
+                option.SignIn.RequireConfirmedEmail = false;
+                option.User.AllowedUserNameCharacters = "qwertyuiopasdfghjklzxcvbnmM_1234567890";
+            }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
 
             services.AddHttpContextAccessor();  
         }
@@ -47,6 +66,11 @@ namespace Pronia_BackEnd
 
             app.UseRouting();
             app.UseStaticFiles();
+
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+               
 
 
             
@@ -68,3 +92,5 @@ namespace Pronia_BackEnd
         }
     }
 }
+
+
